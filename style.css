@@ -47,8 +47,9 @@ body, html{
 }
 .nav .nav-header .sub-title{
     font-size: 1em;
-    color: #1d96fc;
-    background-color: aliceblue;
+    /* color: #1d96fc;
+    background-color: aliceblue; */
+    color: #25233c;
     border-radius: 4px;
     padding: 2px;
 }
@@ -79,9 +80,10 @@ body, html{
 .container{
     display: flex;
     color: #212121;
+    padding: .9em;
+    box-sizing: border-box;
 }
 .container .menu{
-    margin-top: .8em;
     background-color: #f7f7f7;
     max-width: 20em;
 }
@@ -93,18 +95,37 @@ body, html{
     margin: 0;
     padding: 0;
 }
-.container .menu > ul li{
+/* .container .menu > ul > li> a{
+
     list-style-type: none;
     padding: .7em;
     color: #212121;
     background-color: #eeeeee;
     border-bottom: 1px solid #dfdfdf;
 }
-.container .menu > ul li > ul li{
-    display: none;
+ */
+.menu > ul > li {
+    list-style-type: none;
 }
-.container .menu > ul li:hover{
-    color: aliceblue;
-    background-color: #1d96fc;
-    cursor: pointer;
+.menu > ul > li > a{
+    display: block;
+    text-decoration: none;
+    background-color: #f7f7f7;
+    padding: .6em;
+    color: #212121;
+    border-bottom: 1px solid #dfdfdf;
+}
+.sub-menu{
+    background-color: #acacac;
+    overflow: hidden;
+    max-height: 0em;
+    transition: .8s;
+}
+.sub-menu > a{
+    display: block;
+    text-decoration: none;
+    padding: .6em 1.8em;
+}
+.menu > ul > li:target .sub-menu{
+    max-height: 30em;
 }
