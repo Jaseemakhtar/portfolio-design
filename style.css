@@ -116,10 +116,10 @@ body, html{
     border-bottom: 1px solid #dfdfdf;
 }
 .sub-menu{
-    background-color: #acacac;
+    background-color: #e4e4e4;
     overflow: hidden;
     max-height: 0em;
-    transition: .8s;
+    transition: .7s;
 }
 .sub-menu > a{
     display: block;
@@ -128,4 +128,11 @@ body, html{
 }
 .menu > ul > li:target .sub-menu{
     max-height: 30em;
+}
+.menu > ul > li > a:hover{
+    background-color: #1d96fc;
+    color: #ffffff;
+}
+.menu > ul > li > a > i{
+    margin-right: .4em;
 }
