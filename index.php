@@ -70,7 +70,7 @@
                 </ul>
             </div>
             <div class="details">
-                <div>
+                <div id="sec-one">
                     <div class="d-info">
                         <div>
                             <img src="shivanadsir.png" alt="pic">
@@ -95,47 +95,50 @@
                             </table>
                         </div>
                     </div>
-                <div class="line"></div>
-                <h3>Personal Details</h3>
-                <table>
-                    <tr>
-                        <td class="sm-head">Date of birth:</td>
-                        <td class="sm-details">1st July-1971 </td>
-                    </tr>
-                    <tr>
-                        <td class="sm-head">Residence Address: </td>
-                        <td class="sm-details">R/o Siddapur Wadi. Post Jaigoan, Tq. Bhalki, <br>
-                        Dist Bidar-Karanataka-  BHALKI-585 328.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="sm-head">
-                            Passport Details:
-                        </td>
-                        <td class="sm-details">
-                            Passport No:  G4470066, Expiry Date: 9th, August, 2017.
-                            (Applied for Renewal)    
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="sm-head">
-                            Languages known:
-                        </td>
-                        <td class="sm-details">
-                            English, Hindi, Kannada, Marathi  
-                        </td>
-                    </tr>
-                </table>
-                <div class="line"></div>
-                <h3>Education</h3>
-                <ul>
-                    <li><span class="sm-head">Ph.D. (Computer Science)</span> University of Pune, Pune-Maharshtra India. Ph.D. Research topic is, "Development of Compression technique for Noisy Image: A Multi-Wavelet approach" Under the guidance of Dr. K.V. Kale-2009 </li>
-                    <li><span class="sm-head">M.Phil. (Computer Science)</span> Manonmaniam Sundarnar University (MSU), Thirunelvelli, Tamil Nadu-India- 2003. Dissertation: “Application of power lines in PC-to-PC Communication, their Problems and Solutions”   </li>
-                    <li><span class="sm-head">M.Sc. (Computer Science)</span> Dr. Babasaheb Ambedkar Marathwada University Aurangabad, Maharashtra-India -1995</li>
-                    <li><span class="sm-head">B.Sc. (Physics, Mathematics and Electronics)</span> Gulbarga University Gulbarga, March/April 1993</li>
-                </ul>
+                    <div class="line"></div>
+                    <h3>Personal Details</h3>
+                    <table>
+                        <tr>
+                            <td class="sm-head">Date of birth:</td>
+                            <td class="sm-details">1st July-1971 </td>
+                        </tr>
+                        <tr>
+                            <td class="sm-head">Residence Address: </td>
+                            <td class="sm-details">R/o Siddapur Wadi. Post Jaigoan, Tq. Bhalki, <br>
+                            Dist Bidar-Karanataka-  BHALKI-585 328.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="sm-head">
+                                Passport Details:
+                            </td>
+                            <td class="sm-details">
+                                Passport No:  G4470066, Expiry Date: 9th, August, 2017.
+                                (Applied for Renewal)    
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="sm-head">
+                                Languages known:
+                            </td>
+                            <td class="sm-details">
+                                English, Hindi, Kannada, Marathi  
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="line"></div>
+                    <h3>Education</h3>
+                    <ul>
+                        <li><span class="sm-head">Ph.D. (Computer Science)</span> University of Pune, Pune-Maharshtra India. Ph.D. Research topic is, "Development of Compression technique for Noisy Image: A Multi-Wavelet approach" Under the guidance of Dr. K.V. Kale-2009 </li>
+                        <li><span class="sm-head">M.Phil. (Computer Science)</span> Manonmaniam Sundarnar University (MSU), Thirunelvelli, Tamil Nadu-India- 2003. Dissertation: “Application of power lines in PC-to-PC Communication, their Problems and Solutions”   </li>
+                        <li><span class="sm-head">M.Sc. (Computer Science)</span> Dr. Babasaheb Ambedkar Marathwada University Aurangabad, Maharashtra-India -1995</li>
+                        <li><span class="sm-head">B.Sc. (Physics, Mathematics and Electronics)</span> Gulbarga University Gulbarga, March/April 1993</li>
+                    </ul>
+                </div>
+                <div id="sec-two">
+                    
+                </div>
             </div>
-        </div>
         </div>
         <div class="footer">
             <!-- <h5 style="margin: .3em;">Made with &hearts;</h5>
