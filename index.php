@@ -134,9 +134,28 @@
                         <li><span class="sm-head">M.Sc. (Computer Science)</span> Dr. Babasaheb Ambedkar Marathwada University Aurangabad, Maharashtra-India -1995</li>
                         <li><span class="sm-head">B.Sc. (Physics, Mathematics and Electronics)</span> Gulbarga University Gulbarga, March/April 1993</li>
                     </ul>
+                    <div class="line"></div>
                 </div>
                 <div id="sec-two">
-                    
+                    <h3>Download Dataset</h3>
+                    <p>Fill the request form.</p>
+                    <form action="submit.php" method="post">
+                        <p>
+                            Your Name: <br>
+                            <input type="text" name="name" >
+                        </p>
+                        <p>
+                            Your Email: <br>
+                            <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 3}$">
+                        </p>
+                        <p>
+                            <input id="chkbox" type="checkbox" > I will acknowledge the dataset in my research work.
+                        </p>
+                        <p>
+                            <input id="btn-submit" name="btn-data-sub" class="btn-sub-disabled" type="submit" value="Submit!" disabled="disabled">
+                        </p>
+                    </form>
+                    <div class="line"></div>
                 </div>
             </div>
         </div>

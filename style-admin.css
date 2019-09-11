@@ -32,7 +32,7 @@ body{
     border: none;
     text-align: center;
     outline: none;
-    transition: width 0.3s;
+    transition: width 0.2s;
 }
 .button{
     background-color: rgba(200, 200, 200, 0.5);

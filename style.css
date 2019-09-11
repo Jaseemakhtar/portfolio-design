@@ -177,3 +177,25 @@ ul{
     overflow-y: scroll;
     height: 70vh;
 }
+#sec-two  p{
+    font-size: 0.9em;
+}
+.btn-sub{
+    background-color: #1d96fc;
+    padding: .6em;
+    border: none;
+    color: #ffffff;
+    border-radius: .3em;   
+    transition: all .3s;
+}
+.btn-sub-disabled{
+    background-color: #607383;
+    padding: .6em;
+    border: none;
+    color: #ffffff;
+    border-radius: .3em;   
+    transition: all .3s;
+}
+.btn-sub:hover{
+    background-color: #1e7cc9;
+}
