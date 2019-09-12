@@ -136,27 +136,28 @@
                     </ul>
                     <div class="line"></div>
                 </div>
+                
                 <div id="sec-two">
                     <h3>Download Dataset</h3>
-                    <p>Fill the request form.</p>
-                    <form action="submit.php" method="post">
-                        <p>
-                            Your Name: <br>
-                            <input type="text" name="name" >
-                        </p>
-                        <p>
-                            Your Email: <br>
-                            <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 3}$">
-                        </p>
-                        <p>
-                            <input id="chkbox" type="checkbox" > I will acknowledge the dataset in my research work.
-                        </p>
-                        <p>
-                            <input id="btn-submit" name="btn-data-sub" class="btn-sub-disabled" type="submit" value="Submit!" disabled="disabled">
-                        </p>
-                    </form>
+                        <p>Fill the request form.</p>
+                        
+                            <p>
+                                Your Name: <br>
+                                <input id="inputName" minlength="3" type="text" required>
+                            </p>
+                            <p>
+                                Your Email: <br>
+                                <input id="inputEmail" type="email" required>
+                            </p>
+                            <p>
+                                <input id="chkbox" type="checkbox" > I will acknowledge the dataset in my research work.
+                            </p>
+                            <p>
+                                <input id="btn-submit" class="btn-sub-disabled" type="submit" value="Submit!">
+                            </p>
                     <div class="line"></div>
                 </div>
+                
             </div>
         </div>
         <div class="footer">
@@ -164,6 +165,6 @@
             <h6 style="margin: .3em;" >by <a class="github" href="https://jaseemakhtar.github.io">Jaseemakhtar &copy;</a></h6> -->
         </div>
     </div>
-    <script src="script.js"></script>
+        <script src="script.js"></script>
 </body>
 </html>
