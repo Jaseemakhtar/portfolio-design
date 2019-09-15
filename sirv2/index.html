@@ -10,6 +10,18 @@
     <title>Shivanand Gornale</title>
 </head>
 <body>
+    <div class="nav-top">
+        <div class="nav-items">
+            <ul>
+                <li><a id="selected-nav" href="#">Home</a></li>
+                <li><a onclick="scrollToId('about')">About</a></li>
+                <li><a href="#">Research</a></li>
+                <li><a onclick="scrollToId('dataset')">Dataset</a></li>
+                <li><a href="#">Publications</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
     <div class="container">
         <div class="section">
             <div class="nav">
@@ -47,12 +59,11 @@
         <div id="about" class="section-side">
             <div class="side-nav">
                 <ul>
-                    <li><a class="selected-a" onclick="scrollToId('about')"><i class="fas fa-info-circle"></i> About</a></li>
-                    <li><a onclick="scrollToId('teaching')"><i class="fas fa-chalkboard-teacher"></i> Teaching & Research Experience</a></li>
-                    <!-- <li><a href="#"><i class="fas fa-globe-asia"></i> Conference/Workshop/Seminar's</a></li> -->
-                    <li><a onclick="scrollToId('achievements')"><i class="fas fa-trophy"></i> Achievements & Awards</a></li>
-                    <li><a onclick="scrollToId('member')"><i class="fas fa-user-tie"></i> Member of professional</a></li>
-                    <li><a onclick="scrollToId('invited')"><i class="fas fa-comment-alt"></i> Invited Talk</a></li>
+                    <li><a class="selected-a"><i class="fas fa-info-circle"></i> About</a></li>
+                    <li><a><i class="fas fa-chalkboard-teacher"></i> Teaching & Research Experience</a></li>
+                    <li><a><i class="fas fa-trophy"></i> Achievements & Awards</a></li>
+                    <li><a><i class="fas fa-user-tie"></i> Member of professional</a></li>
+                    <li><a><i class="fas fa-comment-alt"></i> Invited Talk</a></li>
                 </ul>
             </div>
             <div class="side-main">
@@ -116,16 +127,34 @@
                     <li><span class="sm-head">B.Sc. (Physics, Mathematics and Electronics)</span> Gulbarga University Gulbarga, March/April 1993</li>
                 </ul>
             </div>
+            <div class="side-main hide">
+                <h3>Teaching Experience</h3>
+                <ul>
+                    <li>Working as <span class="sm-head">Professor of Computer Science</span>, School of Mathematics and Computing Sciences, Rani Channamma University, Vidya Sangama, NH4-Belagavi –Karnataka from <span class="sm-head">04.09.2016</span> to till date</li>
+                    <li>Worked as <span class="sm-head">Associate Professor of Computer Science</span>, School of Mathematics and Computing Sciences, Rani Channamma University, Vidya Sangama, NH4-Belagavi –Karnataka from <span class="sm-head">04.09.13</span> to <span class="sm-head">03-09-16</span></li>
+                    <li>Worked as Asst. Professor and Coordinator, Post Graduate Department of Computer Science, Government College (Autonomous), Mandya –Karnataka ( Affiliated to University of Mysore)  from <span class="sm-head">26.02.2008</span> to <span class="sm-head">03.09.2013</span></li>
+                    <li>Worked as Asst. Professor  and Head, Vidyapratishtan’s’ Institute of Information Technology (VIIT), Baramati Pune-Maharastra (Affiliated to University of Pune and  AICTE, New Delhi) from <span class="sm-head">01-08-2006</span> to <span class="sm-head">20-02-2008</span></li>
+                    <li>Worked as a Lecturer and Head, Department of Computer Science, Channabasaveshwar Degree College Bhalki (Affiliated to Gulbarga University Gulbarga) From <span class="sm-head">26-07-1995</span> to <span class="sm-head">31-07-2006</span>.</li>
+                </ul>
+                <div class="line"></div>
+                <h3>Research Experience</h3>
+                <ul>
+                    <li>Completed Minor Research Project sanctioned by UGC New Delhi entitled “Study of Fingerprint image de-noising techniques through Decimated and Un-decimated Wavelet Transform (WT). (Ref.No. UGC/MRP(s)/0286/08-09/KAMY022) (completed)</li>
+                    <li>Working as Mentor on Project Under Women Scientist Scheme-B(WOS-B) entitled “Detection and Analysis of Osteoarthritis in Knee X-ray images using Machine Vision”,  By DST, New Delhi for 03 Years- 2017-18 to 2019-2020 (22,10,000/-)</li>
+                    <li>Working on Minor Research Project entitled Identification of Knee Osteoarthritis using various Segmentation Techniques”, Sanctioned by Rani Channamma University, Vidya Sangama, NH4-Belagavi –Karnataka.</li>
+                    <li>Doing research work in Image Processing and pattern recognition for Biometric, Medical Imaging application and Networking (Since 1999). </li>
+                </ul>
+            </div>
         </div>
 
         <!-- Teaching & Research XP -->
 
-        <div id="teaching" class="section-side">
+        <!-- <div id="teaching" class="section-side">
             <div class="side-nav">
                 <ul>
                     <li><a class="selected-a" onclick="scrollToId('teaching')"><i class="fas fa-chalkboard-teacher"></i> Teaching & Research Experience</a></li>
                     <li><a onclick="scrollToId('about')"><i class="fas fa-info-circle"></i> About</a></li>
-                    <!-- <li><a href="#"><i class="fas fa-globe-asia"></i> Conference/Workshop/Seminar's</a></li> -->
+                    <li><a href="#"><i class="fas fa-globe-asia"></i> Conference/Workshop/Seminar's</a></li>
                     <li><a onclick="scrollToId('achievements')"><i class="fas fa-trophy"></i> Achievements & Awards</a></li>
                     <li><a onclick="scrollToId('member')"><i class="fas fa-user-tie"></i> Member of professional</a></li>
                     <li><a onclick="scrollToId('invited')"><i class="fas fa-comment-alt"></i> Invited Talk</a></li>
@@ -149,17 +178,16 @@
                     <li>Doing research work in Image Processing and pattern recognition for Biometric, Medical Imaging application and Networking (Since 1999). </li>
                 </ul>
             </div>
-        </div>
+        </div> -->
 
         <!-- Achievements -->
 
-        <div id="achievements" class="section-side">
+        <!-- <div id="achievements" class="section-side">
             <div class="side-nav">
                 <ul>
                     <li><a class="selected-a"><i class="fas fa-trophy"></i> Achievements & Awards</a></li>
                     <li><a onclick="scrollToId('about')"><i class="fas fa-info-circle"></i> About</a></li>
                     <li><a onclick="scrollToId('teaching')"><i class="fas fa-chalkboard-teacher"></i> Teaching & Research Experience</a></li>
-                    <!-- <li><a href="#"><i class="fas fa-globe-asia"></i> Conference/Workshop/Seminar's</a></li> -->
                     <li><a onclick="scrollToId('member')"><i class="fas fa-user-tie"></i> Member of professional</a></li>
                     <li><a onclick="scrollToId('invited')"><i class="fas fa-comment-alt"></i> Invited Talk</a></li>
                 </ul>
@@ -171,17 +199,16 @@
                     <li><span class="sm-head">“Vidyabhushan”</span>Award 2010, by INSA (Indian NET‐SET Association, Amravati), Maharashtra-India.</li>
                 </ul>
             </div>
-        </div>
+        </div> -->
 
         <!-- Member of Profession -->
 
-        <div id="member" class="section-side">
+        <!-- <div id="member" class="section-side">
             <div class="side-nav">
                 <ul>
                     <li><a class="selected-a" ><i class="fas fa-user-tie"></i> Member of professional</a></li>
                     <li><a onclick="scrollToId('about')"><i class="fas fa-info-circle"></i> About</a></li>
                     <li><a onclick="scrollToId('teaching')"><i class="fas fa-chalkboard-teacher"></i> Teaching & Research Experience</a></li>
-                    <!-- <li><a href="#"><i class="fas fa-globe-asia"></i> Conference/Workshop/Seminar's</a></li> -->
                     <li><a onclick="scrollToId('achievements')"><i class="fas fa-trophy"></i> Achievements & Awards</a></li>
                     <li><a onclick="scrollToId('invited')"><i class="fas fa-comment-alt"></i> Invited Talk</a></li>
                 </ul>
@@ -239,17 +266,16 @@
 
                 </ul>
             </div>
-        </div>
+        </div> -->
 
         <!-- Invited talks -->
 
-        <div id="invited" class="section-side">
+        <!-- <div id="invited" class="section-side">
             <div class="side-nav">
                 <ul>
                     <li><a class="selected-a" ><i class="fas fa-comment-alt"></i> Invited Talk</a></li>
                     <li><a onclick="scrollToId('about')"><i class="fas fa-info-circle"></i> About</a></li>
                     <li><a onclick="scrollToId('teaching')"><i class="fas fa-chalkboard-teacher"></i> Teaching & Research Experience</a></li>
-                    <!-- <li><a href="#"><i class="fas fa-globe-asia"></i> Conference/Workshop/Seminar's</a></li> -->
                     <li><a onclick="scrollToId('achievements')"><i class="fas fa-trophy"></i> Achievements & Awards</a></li>
                     <li><a onclick="scrollToId('member')"><i class="fas fa-user-tie"></i> Member of professional</a></li>
                     
@@ -305,7 +331,9 @@
                     <li>Delivered talk on “Research Concepts” and “Biometrics and its Application” at 81st Orientation Programme Academic Staff College, Dr. Babasaheb Ambedkar Marathwada University Aurangabad-Maharashtra on 17th and 18th Feb-2010.</li>
                 </ul>
             </div>
-        </div>
+        </div> -->
+
+        <!-- <li><a href="#"><i class="fas fa-globe-asia"></i> Conference/Workshop/Seminar's</a></li> -->
 
         <div id="dataset" class="section-form">
             <div class="form-holder">
@@ -328,6 +356,7 @@
                 </p>
             </div>
         </div>
+        
         <!-- <div class="section-card">
             <div class="card">
                 <div class="card-head"></div>

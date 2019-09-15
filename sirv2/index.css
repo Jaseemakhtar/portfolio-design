@@ -136,6 +136,20 @@ body{
 .selected-a{
     font-size: 2.2em;
     background-color: rgba(255, 255, 255, 0.4);
+    animation-name: moveUp;
+    animation-duration: .3s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes moveUp{
+    from{
+        transform: translateY(100px);
+        opacity: .6;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }
 
 .line{
@@ -188,4 +202,22 @@ body{
 }
 .btn-sub:hover{
     background-color: #1e7cc9;
+}
+
+.hide{
+    display: none;
+}
+.nav-top{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #ffffff;
+    z-index: 99;
+}
+
+.nav-top > .nav-items > ul{
+    margin-top: .4em;
+    margin-bottom: .4em;
 }

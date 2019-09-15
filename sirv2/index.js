@@ -1,10 +1,40 @@
-console.log("connected");
-
 var ff = document.getElementsByTagName('form')[0];
 var bb = document.getElementById('btn-submit');
 var cc = document.getElementById('chkbox');
+var navItems;
+var navItemsLis;
 
 bb.disabled = true;
+setUp();
+
+function setUp(){
+    navItems = document.querySelectorAll('.side-nav > ul li a');
+    navItemsLis = document.querySelector('.side-nav > ul');    
+    for(var i = 0; i < navItems.length; i++){
+        navItems[i].addEventListener('click', clickOnNav);
+    }
+}
+
+function clickOnNav(e){
+    var removedItem;
+    for(var i = 0; i < navItems.length; i++){
+        if(navItems[i].classList.contains('selected-a')){
+            navItems[i].classList.remove('selected-a');
+        }
+
+        if(e.target === navItems[i]){
+            removedItem = navItemsLis.removeChild(e.target.parentNode);
+            console.log(removedItem);
+        }
+    }
+
+    navItemsLis.insertBefore(removedItem, navItems[0].parentNode);
+    e.target.classList.add('selected-a');
+    setUp();
+}
+
+
+
 
 cc.addEventListener('change', function(){
     if(cc.checked){
@@ -47,29 +77,3 @@ function post(url, params){
     http.send(params);
 }
 
-
-
-document.getElementsByTagName('body')[0].onscroll = function(e) {
-    console.log("scrolling body");
-    
-};
-
-document.getElementsByClassName('container')[0].addEventListener('scroll', function(e){
-    console.log('scrolling container');
-});
-
-function scrollToId(id){
-    document.getElementById(id).scrollIntoView({ 
-        behavior: 'smooth' 
-    });
-}
-
-window.addEventListener("wheel", event => {
-    const delta = Math.sign(event.deltaY);
-    console.info(delta);
-    if(event.deltaY < 0){
-
-    }else{
-        
-    }
-});
