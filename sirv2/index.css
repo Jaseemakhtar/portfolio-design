@@ -186,15 +186,24 @@ body{
     background-color: #1d96fc;
 }
 .section-form{
+    position: absolute;
     height: 100vh;
-    background-color: #1d96fc;
+    width: 100%;
+    top: 0;
+    /* background-color: rgba(29, 150, 252);
+    filter: blur(8px);
+  -webkit-filter: blur(8px); */
+  background-color: rgba(0, 0, 0, .8);
     display: flex;
     align-items: center;
     justify-content: center;
+    animation-name: moveUp;
+    animation-duration: .3s;
+    animation-timing-function: ease-in;
 }
 .form-holder{
     background: #ffffff;
-    padding: 1.5em;
+    padding: .5em .9em 1.55em 1.5em;
     border-radius: .4em;
 }
 .btn-sub{
@@ -276,7 +285,16 @@ body{
 .footer > p{
     font-size: .7em;
     color: #d4e3f0;
+    margin-left: 2em;
 }
 .footer > p > a{
     color: #d4e3f0;
+}
+.close-modal{
+    font-size: 2em;
+    text-align: right;
+    margin: 0;
+}
+.close-modal:hover{
+    cursor: pointer;
 }

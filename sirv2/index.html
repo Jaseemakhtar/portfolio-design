@@ -32,11 +32,11 @@
                 <div class="nav-items">
                         <ul>
                             <li><a id="selected-nav" href="#">Home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#">Research</a></li>
-                            <li><a >Dataset</a></li>
-                            <li><a href="#">Publications</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a onclick="smoothScrollTo('main-section')" >About</a></li>
+                            <li><a >Research</a></li>
+                            <li><a onclick="openDataset()">Dataset</a></li>
+                            <li><a >Publications</a></li>
+                            <li><a >Contact</a></li>
                         </ul>
                 </div>
             </div>
@@ -49,7 +49,7 @@
                     <h1>Dr. Shivanand S <br> Gornale</h1>
                     <p><strong>Chairman/Professor of <br> Computer Science Department, <br> RCU Belagavi.</strong></p>
                     <p>M. Sc., M.Phil. Ph.D.(CS)</p>
-                    <button onclick="scrollToId('about')" class="btn btn-white">Read more &nbsp; <i class="fas fa-sort-down"></i></button>
+                    <button onclick="smoothScrollTo('main-section')" class="btn btn-white">Read more &nbsp; <i class="fas fa-sort-down"></i></button>
                 </div>
             </div>
         </div>
@@ -151,16 +151,16 @@
             <div class="sub-container">
                 <div class="side">
                     <ul>
-                        <li><a class="selected-a"><i class="fas fa-info-circle"></i> About</a></li>
-                        <li><a><i class="fas fa-chalkboard-teacher"></i> Teaching & Research Experience</a></li>
-                        <li><a><i class="fas fa-trophy"></i> Achievements & Awards</a></li>
-                        <li><a><i class="fas fa-user-tie"></i> Member of professional</a></li>
-                        <li><a><i class="fas fa-comment-alt"></i> Invited Talk</a></li>
+                        <li><a onclick="changeDisplay(0)" class="selected-a"><i class="fas fa-info-circle"></i> About</a></li>
+                        <li><a onclick="changeDisplay(1)"><i class="fas fa-chalkboard-teacher"></i> Teaching & Research Experience</a></li>
+                        <li><a onclick="changeDisplay(2)"><i class="fas fa-trophy"></i> Achievements & Awards</a></li>
+                        <li><a onclick="changeDisplay(3)"><i class="fas fa-user-tie"></i> Member of professional</a></li>
+                        <li><a onclick="changeDisplay(4)"><i class="fas fa-comment-alt"></i> Invited Talk</a></li>
                     </ul>
                 </div>
                 
                 <div class="detail-section">
-                    <div class="side-main">
+                    <div class="side-main" id="about">
                         <div class="d-info">
                                 <p style="margin-bottom: 0;">
                                     <strong>Dr. Shivanand Sharanappa Gornale </strong> <br>
@@ -222,7 +222,7 @@
                         </ul>
                     </div>
 
-                    <div class="side-main hide">
+                    <div class="side-main hide" id="teaching">
                         <h3>Teaching Experience</h3>
                         <ul>
                             <li>Working as <span class="sm-head">Professor of Computer Science</span>, School of Mathematics and Computing Sciences, Rani Channamma University, Vidya Sangama, NH4-Belagavi –Karnataka from <span class="sm-head">04.09.2016</span> to till date</li>
@@ -241,7 +241,7 @@
                         </ul>
                     </div>
 
-                    <div class="side-main hide">                
+                    <div class="side-main hide" id="achievements">
                         <ul>
                             <li><span class="sm-head">Presented paper in IEEE sponsored International Conference</span>on 4th International Conference Computer Graphics, Imaging and Visualization (CGIV-07) 14, 15 - 17 August 2007,<span class="sm-head">Bangkok, Thailand</span>.</li>
                             <li><span class="sm-head">Nominated for “Best Teacher Award”</span> for the academic year 2006-2007 under University of Pune, Pune (Maharashtra)India.</li>
@@ -249,7 +249,7 @@
                         </ul>
                     </div>
 
-                    <div class="side-main hide">
+                    <div class="side-main hide" id="member">
                         <h3>Academic Bodies</h3>
                         <ul>
                             <li><span class="sm-head">Life Member</span> of The Indian Society for Technical Education(ISTE), New Delhi (MID-LM121715).</li>
@@ -302,7 +302,7 @@
                         </ul>
                     </div>
 
-                    <div class="side-main hide">
+                    <div class="side-main hide" id="invited">
                         <ul>
                             <li>Delivered talks on “Next Generation Human Identification And Verification: Revisiting Biometric Technologies…”and “Medical Imaging in Clinical Applications:  A Computer Aided Approach”,  at Human Resource Development Center , Bangalore University, Bangalore Refresher Course in Computer Science, Sponsored by UGC from 08.12.2018 to 29.12.2018.</li>
                             <li>Attended and Delivered talk on “Human Identification   and Verification-Revisiting Biometric Technologies.........     A Machine Learning Approach International Conference on eITBM-2018 at VIIT, Baramati, 12th to 13th Feb-2018 Maharashtra-India.</li>
@@ -582,6 +582,28 @@
     </div>
     <div class="footer">
         <p> Created with &hearts; <br> &copy; 2019 <a href="https://jaseemakhtar.github.io">Jaseem Amaljeri</a> All Rights Reserved</p>
+    </div>
+    <div id="dataset" class="section-form hide">
+        <div class="form-holder">
+            <p class="close-modal">&times;</p>
+            <h3>Download Dataset</h3>
+            <p>Fill the request form.</p>
+            
+            <p>
+                Your Name: <br>
+                <input id="inputName" minlength="3" type="text" required>
+            </p>
+            <p>
+                Your Email: <br>
+                <input id="inputEmail" type="email" required>
+            </p>
+            <p>
+                <input id="chkbox" type="checkbox" > I will acknowledge the dataset in my research work.
+            </p>
+            <p>
+                <input id="btn-submit" class="btn-sub-disabled" type="submit" value="Submit!">
+            </p>
+        </div>
     </div>
     <script src="index.js"></script>
 </body>
