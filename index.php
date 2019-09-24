@@ -139,22 +139,22 @@
                 
                 <div id="sec-two">
                     <h3>Download Dataset</h3>
-                        <p>Fill the request form.</p>
-                        
-                            <p>
-                                Your Name: <br>
-                                <input id="inputName" minlength="3" type="text" required>
-                            </p>
-                            <p>
-                                Your Email: <br>
-                                <input id="inputEmail" type="email" required>
-                            </p>
-                            <p>
-                                <input id="chkbox" type="checkbox" > I will acknowledge the dataset in my research work.
-                            </p>
-                            <p>
-                                <input id="btn-submit" class="btn-sub-disabled" type="submit" value="Submit!">
-                            </p>
+                    <p>Fill the request form.</p>
+                    
+                    <p>
+                        Your Name: <br>
+                        <input id="inputName" minlength="3" type="text" required>
+                    </p>
+                    <p>
+                        Your Email: <br>
+                        <input id="inputEmail" type="email" required>
+                    </p>
+                    <p>
+                        <input id="chkbox" type="checkbox" > I will acknowledge the dataset in my research work.
+                    </p>
+                    <p>
+                        <input id="btn-submit" class="btn-sub-disabled" type="submit" value="Submit!">
+                    </p>
                     <div class="line"></div>
                 </div>
                 
