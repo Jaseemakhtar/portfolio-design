@@ -112,3 +112,28 @@ function smoothScrollTo(id){
         behavior: 'smooth'
     })
 }
+
+// mobile version - not refactored file
+var btnHamburger;
+var navMenu;
+var navState = false;
+
+if (window.innerWidth < 767) {
+    btnHamburger = document.getElementById('btn-ham'), 
+    navMenu = document.querySelector('#nav-menu > ul');
+
+    btnHamburger.addEventListener('click', navigationToggle);
+
+}
+
+function navigationToggle(e){
+    if(navState){
+        navMenu.style.maxHeight = '0';
+        navState = false;
+    }else{
+        navMenu.style.maxHeight = '500px';
+        navState = true;
+    } 
+    btnHamburger.children[0].classList.toggle('fa-bars');
+    btnHamburger.children[0].classList.toggle('fa-times');
+}

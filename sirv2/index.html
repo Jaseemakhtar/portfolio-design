@@ -6,11 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css">
+    
+    <!-- <link rel="stylesheet" href="index.css"> -->
+
+    <link rel="stylesheet" media="only screen and (min-width: 768px) and (max-width: 1980px)" href="index.css">
+    <link rel="stylesheet" media="only screen and (min-width: 320px) and (max-width: 767px)" type="text/css" href="mobile.css">
     <title>Shivanand Gornale</title>
 </head>
 <body>
-    <div class="nav-top">
+    <div class="nav-top desktop">
         <div class="nav-items-top">
             <ul>
                 <li><a href="#">Home</a></li>
@@ -26,10 +30,13 @@
         <div class="section">
             <div class="nav">
                 <div class="logo">
+                    <div id="btn-ham" class="mobile">
+                        <i class="fas fa-bars"></i>
+                    </div>
                     <h4>Dr. Shivanand S G</h4>
-                    <p>M. Sc., M.Phil. Ph.D.(CS)</p>
+                    <p class="desktop">M. Sc., M.Phil. Ph.D.(CS)</p>
                 </div>
-                <div class="nav-items">
+                <div class="nav-items" id="nav-menu">
                         <ul>
                             <li><a id="selected-nav" href="#">Home</a></li>
                             <li><a onclick="smoothScrollTo('main-section')" >About</a></li>
@@ -48,7 +55,7 @@
                 <div class="heads">
                     <h1>Dr. Shivanand S <br> Gornale</h1>
                     <p><strong>Chairman/Professor of <br> Computer Science Department, <br> RCU Belagavi.</strong></p>
-                    <p>M. Sc., M.Phil. Ph.D.(CS)</p>
+                    <p class="light-text">M. Sc., M.Phil. Ph.D.(CS)</p>
                     <button onclick="smoothScrollTo('main-section')" class="btn btn-white">Read more &nbsp; <i class="fas fa-sort-down"></i></button>
                 </div>
             </div>
@@ -147,7 +154,7 @@
             </div>
         </div> -->
 
-        <div class="main-section">
+        <div class="main-section desktop">
             <div class="sub-container">
                 <div class="side">
                     <ul>
@@ -581,7 +588,7 @@
 
     </div>
     <div class="footer">
-        <p> Created with &hearts; <br> &copy; 2019 <a href="https://jaseemakhtar.github.io">Jaseem Amaljeri</a> All Rights Reserved</p>
+        <p class="very-light-text">&copy; 2019 <a href="https://jaseemakhtar.github.io">Jaseem Amaljeri.</a> All Rights Reserved</p>
     </div>
     <div id="dataset" class="section-form hide">
         <div class="form-holder">
@@ -605,6 +612,7 @@
             </p>
         </div>
     </div>
-    <script src="index.js"></script>
+    <script src="index.js">
+    </script>
 </body>
 </html>

@@ -7,6 +7,7 @@ body{
     margin: 0;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
+
 .section{
     display: flex;
     flex-direction: column;
@@ -226,7 +227,7 @@ body{
     background-color: #1e7cc9;
 }
 
-.hide{
+.hide, .mobile{
     display: none;
 }
 
