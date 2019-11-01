@@ -1,9 +1,10 @@
 //window.onload = (wE) => {
-
+    var mainSection = document.querySelector('.main');
     var navButtons = document.querySelectorAll('.nav-buttons');
     var navToggle = document.querySelector('#nav-toggle');
     var sections = document.querySelectorAll('.main > div');
     var dataSet = document.querySelector('#pop-dataset');
+
 
     var btnSubmit = document.querySelector('#btn-dataset-submit');
     var checkBox = document.querySelector('#chkbox');
@@ -24,6 +25,7 @@
     closeModal.addEventListener('click', onDatasetClicked);
 
     function onNavButtonClicked(e, name){
+        mainSection.scrollTop = '0';
         let element = e.target;
         console.log(name);
         console.log(element);
@@ -47,14 +49,13 @@
         var section = document.querySelector(sectionId);
         section.classList.remove('hide');
         section.classList.add(sectionClass);
-
-        navigationToggle();
+        navigationToggleIfOpen();
     }
 
     function onDatasetClicked(e){
         dataSet.classList.toggle('hide');
         dataSet.classList.toggle('dataset-modal');
-        console.log('toggle dataset')
+        navigationToggleIfOpen();
     }
 
     navToggle.addEventListener('click', navigationToggle);
@@ -66,6 +67,12 @@
             navToggleDesktop();
         }
     }
+
+    function navigationToggleIfOpen(){
+        if(navState)
+            navigationToggle();
+    }
+
 
     function navToggleMobile(){
         if(navState){
