@@ -77,6 +77,7 @@ body{
     max-height: 0px;
     overflow: hidden;
     transition: max-width 0.6s ease-in-out;
+    
 }
 .nav-items{
     width: 100%;
@@ -131,6 +132,23 @@ body{
 .btn-sub-disabled{
     background-color: #5a5e71;
     color: #ebedf4;
+}
+.input-field:focus , .input-field-ta:focus{
+    border: 1px solid #ec8e47;
+    box-shadow: 0px 0px 2px 0px #ec8e47;
+}
+.input-field, .input-field-ta{
+    border: none;
+    border-radius: 4px;
+    padding: 6px;
+    background-color: #ebedf4;
+}
+.input-field{
+    height: 34px;
+}
+.input-field-ta{
+    height: 102px;
+    width: 70%;
 }
 .main{
     display: flex;

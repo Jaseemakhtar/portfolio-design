@@ -52,7 +52,7 @@
                 <div class="titles">
                     <h1 class="dark-color big-head">Dr. Shivanand S Gornale</h1>
                     
-                    <button onclick="onNavButtonClicked(event, 'about')" class="btn btn-white">Read more &nbsp; <i class="fas fa-sort-down"></i></button>
+                    <button onclick="onReadMoreClicked()" class="btn btn-white">Read more &nbsp; <i class="fas fa-sort-down"></i></button>
                 </div> 
             </div>
             
@@ -490,19 +490,19 @@
                     <h3>Contact Us</h3>
                     <p>
                         Your Name: <br>
-                        <input id="inputContactName" minlength="3" type="text" required>
+                        <input class="input-field" id="inputContactName" minlength="3" type="text" required>
                     </p>
                     <p>
                         Lastname: <br>
-                        <input id="inputContactLastName" minlength="3" type="text" required>
+                        <input class="input-field" id="inputContactLastName" minlength="3" type="text" required>
                     </p>
                     <p>
                         Your Email: <br>
-                        <input id="inputContactEmail" type="email" required>
+                        <input class="input-field" id="inputContactEmail" type="email" required>
                     </p>
                     <p>
                         Subject: <br>
-                        <textarea id="inputSubject" minlength="3" length="400" required> </textarea>
+                        <textarea placeholder="Your message here..." class="input-field-ta" id="inputSubject" minlength="3" length="400" required></textarea>
                     </p>
                     <p>
                         <input id="btn-contact-submit" class="btn btn-sub" type="submit" value="Submit!">
@@ -514,6 +514,7 @@
                 <div class="form-holder">
                     <p class="close-modal">&times;</p>
                     <h3>Download Dataset</h3>
+                    <div class="line"></div>
                     <p>Fill the request form.</p>
                     
                     <p>

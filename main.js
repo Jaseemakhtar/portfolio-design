@@ -27,8 +27,6 @@
     function onNavButtonClicked(e, name){
         mainSection.scrollTop = '0';
         let element = e.target;
-        console.log(name);
-        console.log(element);
         
         if(element.tagName.toLowerCase() == 'i' || element.tagName.toLowerCase() == 'span'){
             element = e.target.parentNode;
@@ -50,6 +48,11 @@
         section.classList.remove('hide');
         section.classList.add(sectionClass);
         navigationToggleIfOpen();
+    }
+
+    function onReadMoreClicked(){
+        let a = document.querySelector('.nav-items > ul > li:nth-child(2) > a');
+        a.click();
     }
 
     function onDatasetClicked(e){
